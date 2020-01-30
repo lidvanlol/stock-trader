@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6">
+  <div class="col-lg-12">
     <div class="card mt-3">
       <div class="card-header">
         <h3 class="card-title text-center mt-1">
@@ -9,7 +9,7 @@
       </div>
       <div class="card-body">
         <div class="float-left">
-          <input type="number" class="form-control" placeholder="Quantity" v-model="quantity" :class="{danger:insQunt}"/>
+          <input type="number" class="form-control" placeholder="Quantity" v-model="quantity" :class="{danger:insQunt}" style="width:75%"/>
         </div>
         <div class>
           <button class="btn btn-danger ml-1" @click="sellStock" :disabled="quantity <=0 || insQunt">{{insQunt ? 'Not Enaugh Stocks' : 'Sell'}}</button>
